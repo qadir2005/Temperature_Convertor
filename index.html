@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    </style>
+</head>
+<body>
+    <form id="ConvertForm">
+    <div class="container">
+        <h2 class="text-center" style="text-align: center;">A.Qadir Temperature Converter</h2>
+
+        <div class="flex">
+        <div class="form-group">
+            <select class="form-control" id="fromUnit">
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Celsius">Celsius</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+        </div>
+       <div class="form-group">
+            <input type="number" class="form-control" id="temperature" placeholder="Enter value">
+        </div>
+     
+        <div class="form-group">
+            <select class="form-control" id="toUnit">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+        </div>
+    </div>
+        <button id="convertBtn"type="submit" class="btn btn-primary btn-block">Convert Temp</button>
+        <div id="output" class="text-center"></div>
+    </div>
+</form>
+<footer style="background-color: rgb(112, 189, 112); padding: 10px; text-align: center; position: fixed; bottom: 0; width: 100%;"> 
+
+    <p>developed by <a href="#" style="color: wheat;">Abdul Qadir</a></p>
+    
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
